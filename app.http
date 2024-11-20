@@ -2,7 +2,8 @@ GET  http://localhost:3000/api/transactions/1
 
 ###
 
-GET  http://localhost:3000/api/transactions/?user_id=1
+GET  http://localhost:3000/api/transactions/?user_id=2
+
 
 ###
 
@@ -12,5 +13,13 @@ Content-Type: application/json
 {
   "amount": 100.00,
   "transaction_type": "DEPOSIT",
-  "user": 1
+  "user": 2
+}
+
+###
+PUt http://localhost:3000/api/transactions/1
+Content-Type: application/json
+
+{
+  "status": "COMPLETED"
 }
